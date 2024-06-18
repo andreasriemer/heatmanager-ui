@@ -37,7 +37,7 @@
             }
             .`).concat(t.name,`-step.selected {
                 background-color: transparent;
-                font-weight: 600;
+                font-weight: bold;
             }
         }
         svg {
