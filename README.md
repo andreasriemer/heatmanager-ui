@@ -32,17 +32,28 @@ Import the lib
 
 #### Attributes
 
-| Name      |  Type      | Required | Default   | Description                                |
-| :-------- | :--------- | :------- | :-------- | :----------------------------------------- |
-| `value`   | `number`   | Yes      | undefined | The initial value                          |
-| `steps`   | `number[]` | Yes      | undefined | The range that can be selected             |
-| `size`    | `number`   | No       | 52        | The size (width/height) of a single button |
-| `spacing` | `number`   | No       | 4         | The space between the buttons              |
+| Name      |  Type      | Required | Default                                                                       | Description                                |
+| :-------- | :--------- | :------- | :---------------------------------------------------------------------------- | :----------------------------------------- |
+| `value`   | `number`   | Yes      | undefined                                                                     | The initial value                          |
+| `steps`   | `number[]` | Yes      | undefined                                                                     | The range that can be selected             |
+| `size`    | `number`   | No       | 52                                                                            | The size (width/height) of a single button |
+| `spacing` | `number`   | No       | 4                                                                             | The space between the buttons              |
+| `theme`   | `object`   | No       | primary: `string`, stepBackground: `string`, stepBackgroundHighlight:`string` | The space between the buttons              |
 
 #### Examples
 
 ```html
 <temperature-picker value="20" steps="[19, 19.5, 20, 20.5, 21]" />
+```
+
+```html
+<temperature-picker
+  value="20"
+  steps="[19, 19.5, 20, 20.5, 21]"
+  size="72"
+  spacing="10"
+  theme='{"primary": "rgb(255,185,0)"}'
+/>
 ```
 
 ```javascript
